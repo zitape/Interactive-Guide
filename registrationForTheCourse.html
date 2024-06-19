@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 data-ru="Запись на курс" data-en="Course Enrollment">Запись на курс</h2>
+        <p data-ru="Прежде всего, ознакомься с перечнем онлайн-курсов или онлайн-майноров, утвержденным для тебя. Этот перечень отображается в личном кабинете студента УрФУ в разделе «Выбор майнора»." data-en="First, familiarize yourself with the list of online courses or online minors approved for you. This list is displayed in the student's personal account in the 'Minor Selection' section."></p>
+        <p data-ru="* Памятка по выбору майнора " data-en="* Guide to choosing a minor"><a href="https://istudent.urfu.ru/public/uploaded/services/docs/minors/guide.pdf?v=1713470272">guide.pdf</a>*</p>
+        <h2 data-ru="Самостоятельная запись на курсы УрФУ" data-en="Self-Enrollment in UrFU Courses">Самостоятельная запись на курсы УрФУ</h2>
+        <p data-ru="Для записи на курсы УрФУ следуй этим шагам:" data-en="To enroll in UrFU courses, follow these steps:"></p>
+        <ol>
+            <li data-ru="Перейди в каталог курсов;" data-en="Go to the course catalog;"></li>
+            <div class="image-container">
+                <img src="image/regoncourse1.PNG" alt="Course Catalog">
+            </div>
+            <li data-ru="Найди нужный курс: Воспользуйся системой поиска по названию курса;" data-en="Find the desired course: Use the search system by course title;"></li>
+            <div class="image-container">
+                <img src="image/regoncourse2.PNG" alt="Course Search">
+            </div>
+            <li data-ru="Запишись на курс: Открой страницу нужного курса и нажми кнопку «Записаться»." data-en="Enroll in the course: Open the desired course page and click 'Enroll'."></li>
+            <div class="image-container">
+                <img src="image/regoncourse3.PNG" alt="Enroll">
+            </div>
+        </ol>
+        <h2 data-ru="Доступ к материалам курса" data-en="Access to Course Materials">Доступ к материалам курса</h2>
+        <p data-ru="Ограниченный доступ: По умолчанию тебе будет доступна только ограниченная часть материалов курса." data-en="Limited access: By default, you will only have access to a limited part of the course materials."></p>
+        <p data-ru="Полный доступ: Полный доступ к курсу предоставляется после включения в группу, например «УрФУ_Весна2024». Добавление в группу происходит автоматически каждый рабочий день." data-en="Full access: Full access to the course is granted after being included in the group, for example, 'UrFU_Spring2024'. Group inclusion occurs automatically every working day."></p>
+        <div class="image-container">
+            <img src="image/regoncourse4.PNG" alt="Full Access">
+        </div>
+        <p data-ru="Чтобы твоя учетная запись была подключена к нужной учебной группе, должны быть соблюдены следующие условия:" data-en="For your account to be connected to the necessary study group, the following conditions must be met:"></p>
+        <ul>
+            <li data-ru="Ты должен изучать курс в текущем семестре согласно учебному плану;" data-en="You must be studying the course in the current semester according to the study plan;"></li>
+            <li data-ru="Если ты изучаешь курсы за предыдущие семестры (академический долг или академическая разница), то ты должен состоять в группе «УрФУ_Задолженность»;" data-en="If you are studying courses from previous semesters (academic debt or academic difference), you must be in the 'UrFU_Debt' group;"></li>
+            <li data-ru="Прочитай инструкцию по пересдаче курсов для должников прошлых семестров;" data-en="Read the instructions for retaking courses for students with debt from past semesters;"></li>
+            <li data-ru="Ты должен самостоятельно записаться на необходимый по учебному плану курс;" data-en="You must self-enroll in the required course according to the study plan;"></li>
+            <li data-ru="В профиле на openedu.ru должна быть указана корпоративная электронная почта @urfu.me." data-en="Your profile on openedu.ru must indicate the corporate email @urfu.me."></li>
+        </ul>
+        <h2 data-ru="Что делать если тебя не подключили к группе?" data-en="What to do if you are not added to the group?">Что делать если тебя не подключили к группе?</h2>
+        <p data-ru="Если в течение недели после записи на курс тебя не добавили в группу и полный доступ к материалам недоступен, напиши письмо с твоей корпоративной почты на openedu@urfu.ru с просьбой о включении в группу, например «УрФУ_Весна2024»." data-en="If within a week after enrolling in the course you are not added to the group and full access to materials is unavailable, write an email from your corporate email to openedu@urfu.ru requesting to be included in the group, for example, 'UrFU_Spring2024'."></p>
+        <h2 data-ru="Запись на курсы сторонних образовательных учреждений" data-en="Enrollment in Courses from Partner Educational Institutions">Запись на курсы сторонних образовательных учреждений</h2>
+        <p data-ru="При выборе курсов от образовательных учреждений партнеров, кроме курсов от МИСиС и МГУ, необходимо ждать записи. Убедись, что следуешь инструкциям по записи на каждом конкретном курсе. Следуя этим шагам, ты сможешь успешно записаться на необходимые курсы и получить доступ ко всем образовательным материалам для успешного обучения." data-en="When choosing courses from partner educational institutions, except for courses from MISiS and MSU, you need to wait for enrollment. Make sure you follow the enrollment instructions for each specific course. By following these steps, you will be able to successfully enroll in the necessary courses and gain access to all educational materials for successful learning."></p>
+    </div>
+    
+    <!-- Подвал -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Обратная связь" data-en="Feedback">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const languageSelect = document.getElementById('language-select');
+            
+            // Функция для смены языка
+            function switchLanguage() {
+                const selectedLanguage = languageSelect.value;
+                const elements = document.querySelectorAll('[data-ru], [data-en]');
+                elements.forEach(element => {
+                    if (selectedLanguage === 'ru') {
+                        element.textContent = element.getAttribute('data-ru');
+                    } else if (selectedLanguage === 'en') {
+                        element.textContent = element.getAttribute('data-en');
+                    }
+                });
+                // Сохранить выбранный язык в localStorage
+                localStorage.setItem('language', selectedLanguage);
+            }
+            
+            // Событие для селектора языка
+            languageSelect.addEventListener('change', switchLanguage);
+            
+            // Загрузка языка из localStorage
+            const savedLanguage = localStorage.getItem('language') || 'ru';
+            languageSelect.value = savedLanguage;
+            switchLanguage();
+        });
+
+
+        // Function to check quiz answers
+        function checkQuiz() {
+            const answers = [1];  // Correct answer index for each question
+            let score = 0;
+            for (let i = 1; i <= answers.length; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && parseInt(selected.value) === answers[i - 1]) {
+                    score++;
+                }
+            }
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = result.getAttribute('data-' + langSelect.value) + score + '/' + answers.length;
+            if (score === answers.length) {
+                document.getElementById('next-button').style.display = 'block';
+            }
+        }
+
+        // Set initial language based on localStorage or default to 'ru'
+        const savedLanguage = localStorage.getItem('language') || 'ru';
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-level menu">Двухуровневое меню</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип" data-ru="Логотип" data-en="Logo"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select" onchange="switchLanguage()">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 class="main-title" data-ru="Поддержка и консультации" data-en="Support and Consultations">Поддержка и консультации</h1>
+        <p data-ru="Для успешного прохождения курсов и получения необходимой поддержки, ты можешь воспользоваться следующими ресурсами и контактами." data-en="To successfully complete courses and receive the necessary support, you can use the following resources and contacts.">
+            Для успешного прохождения курсов и получения необходимой поддержки, ты можешь воспользоваться следующими ресурсами и контактами.
+        </p>
+        <p class="section-title" data-ru="1) Техническая поддержка:" data-en="1) Technical Support:">1) Техническая поддержка:</p>
+        <p data-ru="Если у тебя возникли технические проблемы с платформой Openedu или приложением ITMOproctor, обязательно обратись в поддержку:" data-en="If you encounter technical issues with the Openedu platform or the ITMOproctor app, be sure to contact support:">
+            Если у тебя возникли технические проблемы с платформой Openedu или приложением ITMOproctor, обязательно обратись в поддержку:
+        </p>
+        <div class="contact-info">
+        <ul>
+            <li><p data-ru="Электронная почта: support@openedu.ru" data-en="Email: support@openedu.ru">Электронная почта: support@openedu.ru</p></li>
+            <li><p data-ru="Телефон: +7 (343) 375-44-44" data-en="Phone: +7 (343) 375-44-44">Телефон: +7 (343) 375-44-44</p></li>
+            <li><p data-ru="Чат: В правом нижнем углу сайта Openedu.ru доступен онлайн-чат для оперативного решения технических вопросов." data-en="Chat: An online chat for resolving technical issues is available in the bottom right corner of the Openedu.ru website.">Чат: В правом нижнем углу сайта Openedu.ru доступен онлайн-чат для оперативного решения технических вопросов.</p></li>
+        </ul>
+        </div>
+        <p data-ru="Если у тебя возникли технические проблемы с платформой eLearn:" data-en="If you encounter technical issues with the eLearn platform:">
+            Если у тебя возникли технические проблемы с платформой eLearn:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Адрес: Софьи Ковалевской 5, ауд.Т-310" data-en="Address: Sofya Kovalevskaya 5, room T-310">Адрес: Софьи Ковалевской 5, ауд.Т-310</p>
+            <p data-ru="Телефон: (343) 227-20-70" data-en="Phone: (343) 227-20-70">Телефон: (343) 227-20-70</p>
+            <p data-ru="Электронная почта: support@urfu.ru" data-en="Email: support@urfu.ru">Электронная почта: support@urfu.ru</p>
+        </div>
+        <p class="section-title" data-ru="2) Консультации по учебным вопросам:" data-en="2) Academic Consultations:">2) Консультации по учебным вопросам:</p>
+        <p data-ru="Для получения консультаций по учебным вопросам, таким как расписание занятий, регистрация на курсы или академическая задолженность, обратись в дирекцию твоего института:" data-en="For consultations on academic issues such as class schedules, course registration, or academic debt, contact the administration of your institute:">
+            Для получения консультаций по учебным вопросам, таким как расписание занятий, регистрация на курсы или академическая задолженность, обратись в дирекцию твоего института:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Электронная почта: адреса доступны на официальном сайте института." data-en="Email: addresses are available on the official institute website.">Электронная почта: адреса доступны на официальном сайте института.</p>
+            <p data-ru="Телефон: Контактный номер телефона твоего института можно найти на официальном сайте УрФУ." data-en="Phone: The contact number of your institute can be found on the official UrFU website.">Телефон: Контактный номер телефона твоего института можно найти на официальном сайте УрФУ.</p>
+        </div>
+        <p class="section-title" data-ru="3) Академические консультации:" data-en="3) Academic Consultations:">3) Академические консультации:</p>
+        <p data-ru="Академические консультации помогут тебе в решении вопросов, связанных с содержанием курсов и учебной нагрузкой. Для этого ты можешь воспользоваться следующими ресурсами:" data-en="Academic consultations will help you resolve issues related to course content and academic workload. You can use the following resources:">
+            Академические консультации помогут тебе в решении вопросов, связанных с содержанием курсов и учебной нагрузкой. Для этого ты можешь воспользоваться следующими ресурсами:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Форумы и обсуждения: На платформе Openedu.ru доступны форумы и разделы для обсуждения, где ты можешь задавать вопросы и получать ответы от преподавателей и других студентов." data-en="Forums and discussions: On the Openedu.ru platform, forums and discussion sections are available where you can ask questions and get answers from instructors and other students.">Форумы и обсуждения: На платформе Openedu.ru доступны форумы и разделы для обсуждения, где ты можешь задавать вопросы и получать ответы от преподавателей и других студентов.</p>
+            <p data-ru="На платформе eLearn в твоем доступе есть сообщения, где ты можешь получить поддержку по курсу." data-en="On the eLearn platform, you have access to messages where you can get support for the course.">На платформе eLearn в твоем доступе есть сообщения, где ты можешь получить поддержку по курсу.</p>
+            <p data-ru="Если у тебя возникнут вопросы при прохождении курса, ты можешь обратиться напрямую к преподавателям курса, их контактная информация указана на странице курса." data-en="If you have questions during the course, you can contact the course instructors directly; their contact information is listed on the course page.">Если у тебя возникнут вопросы при прохождении курса, ты можешь обратиться напрямую к преподавателям курса, их контактная информация указана на странице курса.</p>
+            <p data-ru="В случае если тебе не ответят, обратись к преподавателям университета для дальнейшего обсуждения возникших трудностей." data-en="If you do not receive a response, contact university instructors for further discussion of any difficulties.">В случае если тебе не ответят, обратись к преподавателям университета для дальнейшего обсуждения возникших трудностей.</p>
+        </div>
+
+        <p class="section-title" data-ru="4) Психологическая поддержка:" data-en="4) Psychological Support:">4) Психологическая поддержка:</p>
+        <p data-ru="Если ты сталкиваешься со стрессом или другими психологическими трудностями, связанными с учебой, обратись в службу психологической поддержки УрФУ:" data-en="If you are facing stress or other psychological difficulties related to your studies, contact UrFU's psychological support service:">
+            Если ты сталкиваешься со стрессом или другими психологическими трудностями, связанными с учебой, обратись в службу психологической поддержки УрФУ:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Электронная почта: psy_support@urfu.ru" data-en="Email: psy_support@urfu.ru">Электронная почта: psy_support@urfu.ru</p>
+            <p data-ru="Телефон: +7 (343) 375-45-67" data-en="Phone: +7 (343) 375-45-67">Телефон: +7 (343) 375-45-67</p>
+            <p data-ru="Личные консультации: Ты можешь записаться на личную консультацию с психологом через личный кабинет на сайте УрФУ." data-en="Personal consultations: You can schedule a personal consultation with a psychologist through your personal account on the UrFU website.">Личные консультации: Ты можешь записаться на личную консультацию с психологом через личный кабинет на сайте УрФУ.</p>
+        </div>
+        <p class="section-title" data-ru="5) Административная поддержка:" data-en="5) Administrative Support:">5) Административная поддержка:</p>
+        <p data-ru="Для решения административных вопросов, таких как оформление документов, регистрация и другие процедуры, обратись в учебный офис твоего института:" data-en="For resolving administrative issues such as document processing, registration, and other procedures, contact your institute's academic office:">
+            Для решения административных вопросов, таких как оформление документов, регистрация и другие процедуры, обратись в учебный офис твоего института:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Электронная почта: Контакты учебного офиса можно найти на официальном сайте твоего института." data-en="Email: The academic office contacts can be found on your institute's official website.">Электронная почта: Контакты учебного офиса можно найти на официальном сайте твоего института.</p>
+            <p data-ru="Личный кабинет: Посети учебный офис для получения консультации лично. Часы работы и адреса указаны на сайте института." data-en="Personal account: Visit the academic office for a personal consultation. Office hours and addresses are listed on the institute's website.">Личный кабинет: Посети учебный офис для получения консультации лично. Часы работы и адреса указаны на сайте института.</p>
+        </div>
+        <p class="section-title" data-ru="6) Вопросы по прокторингу:" data-en="6) Proctoring Issues:">6) Вопросы по прокторингу:</p>
+        <p data-ru="Если у тебя возникают вопросы по работе с системой прокторинга или по техническим требованиям, обратись в службу поддержки прокторинга:" data-en="If you have questions about the proctoring system or technical requirements, contact the proctoring support service:">
+            Если у тебя возникают вопросы по работе с системой прокторинга или по техническим требованиям, обратись в службу поддержки прокторинга:
+        </p>
+        <div class="contact-info">
+            <p data-ru="Электронная почта: proctoring_support@urfu.ru" data-en="Email: proctoring_support@urfu.ru">Электронная почта: proctoring_support@urfu.ru</p>
+        </div>
+        <p class="section-title" data-ru="7) Обратная связь:" data-en="7) Feedback:">7) Обратная связь:</p>
+        <p data-ru="Форма обратной связи: Доступна в личном кабинете на сайте Openedu." data-en="Feedback form: Available in your personal account on the Openedu website.">
+            Форма обратной связи: Доступна в личном кабинете на сайте Openedu.
+        </p>
+        <div class="contact-info">
+            <p data-ru="Электронная почта: feedback@urfu.ru" data-en="Email: feedback@urfu.ru">Электронная почта: feedback@urfu.ru</p>
+        </div>
+    </div>
+
+  <!-- Подвал -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Обратная связь" data-en="Feedback">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language-select');
+    
+    // Функция для смены языка
+    function switchLanguage() {
+        const selectedLanguage = languageSelect.value;
+        const elements = document.querySelectorAll('[data-ru], [data-en]');
+        elements.forEach(element => {
+            if (selectedLanguage === 'ru') {
+                element.textContent = element.getAttribute('data-ru');
+            } else if (selectedLanguage === 'en') {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+        // Сохранить выбранный язык в localStorage
+        localStorage.setItem('language', selectedLanguage);
+    }
+    
+    // Событие для селектора языка
+    languageSelect.addEventListener('change', switchLanguage);
+    
+    // Загрузка языка из localStorage
+    const savedLanguage = localStorage.getItem('language') || 'ru';
+    languageSelect.value = savedLanguage;
+    switchLanguage();
+});
+    </script>
+</body>
+</html>

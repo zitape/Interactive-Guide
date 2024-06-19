@@ -1,0 +1,450 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+/***** Стили для меню *****/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 1000; /* Повышение слоя, чтобы меню не перекрывалось */
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul.menu {
+    margin-left: auto;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #545454;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar ul li:hover > a {
+    color: orange;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5f5;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    z-index: 1000; /* Повышение слоя, чтобы подменю не перекрывалось */
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.navbar ul li ul li {
+    width: 200px;
+}
+
+.navbar ul li ul li ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f5f5f5;
+    border: 1px solid #dbdbdb;
+    z-index: 1000; /* Повышение слоя, чтобы подменю не перекрывалось */
+}
+
+.navbar ul li ul li:hover > ul {
+    display: block;
+}
+
+.language-switcher {
+    border: none;
+    margin-right: 40px;
+    font-size: 18px;
+    color: #545454;
+}
+
+.language-switcher a {
+    color: #545454;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.language-switcher a:hover {
+    color: orange;
+}
+
+/***** Стили для приветственного блока *****/
+
+.main__greeting {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px; /* Добавляем отступы по краям */
+}
+
+#greeting_title {
+    width: 700px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.greeting_text {
+    text-align: justify;
+    max-width: 800px; /* Ограничиваем ширину текста для лучшей читаемости */
+    margin: 0 auto;
+}
+
+/***** Стили для блока выбора платформы *****/
+
+.main {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px; /* Добавляем отступы по краям */
+}
+
+.item__platform {
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item__platform h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.item__platform p {
+    text-align: justify;
+    flex-grow: 1;
+}
+
+.item__platform button {
+    padding: 10px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item__platform button:hover {
+    background-color: #faca64;
+}
+
+/***** Media Queries для адаптивности *****/
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul.menu {
+        margin-left: 0;
+    }
+
+    .language-switcher {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .item__platform {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Стили для подвала */
+
+.footer {
+    background: linear-gradient(90deg, #ff7e5f, #ff3f85);
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.footer-container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffe5ec;
+}
+
+.footer-bottom {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ OPENEDU */
+
+.main_openedu_page {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px; /* Добавляем отступы по краям */
+}
+
+.select_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.block {
+    width: 150px;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 calc(30% - 10px);
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+.block a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: justify; /* Для выравнивания текста по ширине */
+}
+
+.text-container p {
+    max-width: 800px; /* Ограничиваем ширину текстового блока */
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .block {
+        flex: 1 1 calc(100% - 40px);
+    }
+}
+
+.quiz {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: auto;
+    flex-direction: column;
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ SupportAndAdvice */
+
+.content {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.main-title {
+    text-align: center;
+    color: orange;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.contact-info {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ elearn */
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 800px;
+
+}
+.container h1, .container h2 {
+    font-size: 30px;
+    color: #ff5733;
+    text-align: center;
+}
+.container p, .container ul {
+    font-size: 16px;
+    color: #555;
+    text-indent: 30px;
+    text-align: justify;
+}
+.buttons {
+    text-align: center;
+    margin: 40px 0;
+}
+.buttons a {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+.image-container-elearn {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.image-container-elearn img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+.features {
+    color: #d6204f;
+    text-indent: 30px;
+}
+.features ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* СТИЛИ ДЛЯ СТРАНИЦЫ selectGuide */
+
+.block-elearn {
+    width: 150px;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 calc(60% - 10px);
+}
+
+.block-elearn:hover {
+    transform: scale(1.05);
+}
+
+.block-elearn a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

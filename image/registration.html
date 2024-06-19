@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 data-ru="Регистрация на платформе" data-en="Registration on the Platform">Регистрация на платформе</h2>
+        <p data-ru="1) Зайди на сайт Открытое образование " data-en="1) Go to the Open Education website"><span data-ru="и нажми «Вход»;" data-en="and click 'Login';"><a href="https://openedu.ru/">Openedu</a></span></p>
+        <div class="image-container">
+            <img src="openedu.png" alt="openedu">
+        </div>
+        <p data-ru="2) Перейди к регистрации;" data-en="2) Proceed to registration;"></p>
+        <div class="image-container">
+            <img src="reg.png" alt="registration">
+        </div>
+        <p data-ru="3) Введи свои данные (ФИО), придумай логин и пароль" data-en="3) Enter your data (Full name), come up with a login and password"></p>
+        <p data-ru="В графе «E-mail» укажи свою корпоративную почту @urfu.me;" data-en="In the 'E-mail' field, indicate your corporate email @urfu.me;"></p>
+        <div class="image-container">
+            <img src="reg2.png" alt="reg2">
+        </div>
+        <p data-ru="4) Отметь «Я – студент российского вуза» и укажи вуз («Уральский федеральный университет имени первого президента России Б. Н. Ельцина»);" data-en="4) Check 'I am a student of a Russian university' and specify the university ('Ural Federal University named after the first President of Russia B. N. Yeltsin');"></p>
+        <div class="image-container">
+            <img src="reg3.png" alt="reg3">
+        </div>
+        <p data-ru="5) Укажи год обучения." data-en="5) Indicate the year of study."></p>
+        <div class="image-container">
+            <img src="reg4.png" alt="reg4">
+        </div>
+        <p data-ru="Теперь ты успешно зарегистрирован на платформе!" data-en="Now you are successfully registered on the platform!"></p>
+    </div>
+    
+    <!-- Викторина -->
+    <div class="quiz">
+        <h2 data-ru="Викторина" data-en="Quiz">Викторина</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p data-ru="Что нужно сделать сначала, чтобы зарегистрироваться на платформе?" data-en="What should you do first to register on the platform?">Что нужно сделать сначала, чтобы зарегистрироваться на платформе?</p>
+                <input type="radio" id="q1a" name="q1" value="0"> <label for="q1a" data-ru="Перейти к регистрации" data-en="Proceed to registration">Перейти к регистрации</label><br>
+                <input type="radio" id="q1b" name="q1" value="1"> <label for="q1b" data-ru="Зайти на сайт Openedu и нажать «Вход»" data-en="Go to the Openedu website and click 'Login'">Зайти на сайт Openedu и нажать «Вход»</label><br>
+                <input type="radio" id="q1c" name="q1" value="2"> <label for="q1c" data-ru="Указать год обучения" data-en="Indicate the year of study">Указать год обучения</label>
+            </div>
+            <div class="question">
+                <p data-ru="Что нужно указать в графе «E-mail»?" data-en="What should be indicated in the 'E-mail' field?">Что нужно указать в графе «E-mail»?</p>
+                <input type="radio" id="q2a" name="q2" value="0"> <label for="q2a" data-ru="Личный e-mail" data-en="Personal email">Личный e-mail</label><br>
+                <input type="radio" id="q2b" name="q2" value="1"> <label for="q2b" data-ru="Корпоративную почту @urfu.me" data-en="Corporate email @urfu.me">Корпоративную почту @urfu.me</label><br>
+                <input type="radio" id="q2c" name="q2" value="2"> <label for="q2c" data-ru="Почту друга" data-en="Friend's email">Почту друга</label>
+            </div>
+            <div class="question">
+                <p data-ru="Какой вуз нужно указать при регистрации?" data-en="Which university should be indicated during registration?">Какой вуз нужно указать при регистрации?</p>
+                <input type="radio" id="q3a" name="q3" value="0"> <label for="q3a" data-ru="МГУ" data-en="MSU">МГУ</label><br>
+                <input type="radio" id="q3b" name="q3" value="1"> <label for="q3b" data-ru="Уральский федеральный университет имени первого президента России Б. Н. Ельцина" data-en="Ural Federal University named after the first President of Russia B. N. Yeltsin">Уральский федеральный университет имени первого президента России Б. Н. Ельцина</label><br>
+                <input type="radio" id="q3c" name="q3" value="2"> <label for="q3c" data-ru="СПбГУ" data-en="SPbSU">СПбГУ</label>
+            </div>
+            <div class="question">
+                <p data-ru="Что нужно указать после выбора вуза?" data-en="What should you indicate after choosing a university?">Что нужно указать после выбора вуза?</p>
+                <input type="radio" id="q4a" name="q4" value="0"> <label for="q4a" data-ru="Год окончания" data-en="Year of graduation">Год окончания</label><br>
+                <input type="radio" id="q4b" name="q4" value="1"> <label for="q4b" data-ru="Год обучения" data-en="Year of study">Год обучения</label><br>
+                <input type="radio" id="q4c" name="q4" value="2"> <label for="q4c" data-ru="Факультет" data-en="Faculty">Факультет</label>
+            </div>
+            <div class="question">
+                <p data-ru="Что нужно отметить в процессе регистрации?" data-en="What should you check during registration?">Что нужно отметить в процессе регистрации?</p>
+                <input type="radio" id="q5a" name="q5" value="0"> <label for="q5a" data-ru="Я – преподаватель российского вуза" data-en="I am a teacher of a Russian university">Я – преподаватель российского вуза</label><br>
+                <input type="radio" id="q5b" name="q5" value="1"> <label for="q5b" data-ru="Я – студент российского вуза" data-en="I am a student of a Russian university">Я – студент российского вуза</label><br>
+                <input type="radio" id="q5c" name="q5" value="2"> <label for="q5c" data-ru="Я – выпускник российского вуза" data-en="I am a graduate of a Russian university">Я – выпускник российского вуза</label>
+            </div>
+            <button type="button" onclick="checkQuiz()" data-ru="Проверить ответы" data-en="Check Answers">Проверить ответы</button>
+        </form>
+        <div id="quiz-result" data-ru="Результат: " data-en="Result: ">Результат: </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Обратная связь" data-en="Feedback">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const languageSelect = document.getElementById('language-select');
+            
+            // Функция для смены языка
+            function switchLanguage() {
+                const selectedLanguage = languageSelect.value;
+                const elements = document.querySelectorAll('[data-ru], [data-en]');
+                elements.forEach(element => {
+                    if (selectedLanguage === 'ru') {
+                        element.textContent = element.getAttribute('data-ru');
+                    } else if (selectedLanguage === 'en') {
+                        element.textContent = element.getAttribute('data-en');
+                    }
+                });
+                // Сохранить выбранный язык в localStorage
+                localStorage.setItem('language', selectedLanguage);
+            }
+            
+            // Событие для селектора языка
+            languageSelect.addEventListener('change', switchLanguage);
+            
+            // Загрузка языка из localStorage
+            const savedLanguage = localStorage.getItem('language') || 'ru';
+            languageSelect.value = savedLanguage;
+            switchLanguage();
+        });
+
+
+        // Function to check quiz answers
+        function checkQuiz() {
+            const answers = [1, 1, 1, 1, 1];
+            let score = 0;
+            for (let i = 1; i <= answers.length; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && parseInt(selected.value) === answers[i - 1]) {
+                    score++;
+                }
+            }
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = result.getAttribute('data-' + langSelect.value) + score + '/' + answers.length;
+        }
+
+        // Set initial language based on localStorage or default to 'ru'
+        const savedLanguage = localStorage.getItem('language') || 'ru';
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main__greeting">
+        <div class="greeting__block">
+            <h1 id="greeting_title" data-ru="Выбери руководство по интересующей тебя теме" data-en="Choose a guide on a topic that interests you">Выбери руководство по интересующей тебя теме</h1>
+        </div>
+    </div>
+
+    <div class="main_openedu_page">
+        <div class="select_item">
+            <div class="block-elearn" id="guide">
+                <a href="registration.html" data-ru="Регистрация на платформе" data-en="Registration on the platform">Регистрация на платформе</a>
+            </div>
+            <div class="block-elearn" id="support">
+                <a href="registrationForTheCourse.html" data-ru="Запись на курс" data-en="Registration for the course">Запись на курс</a>
+            </div>
+            <div class="block-elearn" id="account">
+                <a href="organised.html" data-ru="Организация учебного процесса" data-en="Organization of the educational process">Организация учебного процесса</a>
+            </div>
+            <div class="block-elearn" id="resources">
+                <a href="passingTheFinaltest.html" data-ru="Сдача итогового теста" data-en="Passing the final test">Сдача итогового теста</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language-select');
+    
+    // Функция для смены языка
+    function switchLanguage() {
+        const selectedLanguage = languageSelect.value;
+        const elements = document.querySelectorAll('[data-ru], [data-en]');
+        elements.forEach(element => {
+            if (selectedLanguage === 'ru') {
+                element.textContent = element.getAttribute('data-ru');
+            } else if (selectedLanguage === 'en') {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+        // Сохранить выбранный язык в localStorage
+        localStorage.setItem('language', selectedLanguage);
+    }
+    
+    // Событие для селектора языка
+    languageSelect.addEventListener('change', switchLanguage);
+    
+    // Загрузка языка из localStorage
+    const savedLanguage = localStorage.getItem('language') || 'ru';
+    languageSelect.value = savedLanguage;
+    switchLanguage();
+});
+    </script>
+
+    <!-- Подвал -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contact">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

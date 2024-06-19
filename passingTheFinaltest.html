@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 data-ru="Сдача итогового теста" data-en="Final Test Submission">Сдача итогового теста</h2>
+        <h2 data-ru="Итоговый контроль по курсам УрФУ" data-en="Final Control for UrFU Courses">Итоговый контроль по курсам УрФУ</h2>
+        <p data-ru="В этом разделе представлена инструкция по прохождению итогового теста. Для успешного прохождения необходимо следовать следующих шагам:" data-en="This section provides instructions for passing the final test. To pass successfully, you need to follow these steps:"></p>
+        <ol>
+            <li data-ru="Скачай и установи приложение ITMOproctor" data-en="Download and install the ITMOproctor application">Скачай и установи приложение ITMOproctor</li>
+            <p data-ru="Ссылка на приложение: Загрузка приложения " data-en="Link to the application: Download the application "><a href="https://itmoproctor.openedu.ru/dist/" data-ru="Openedu.ru" data-en="Openedu.ru">Openedu.ru</a></p>
+            <p data-ru="Ссылка на инструкцию: " data-en="Link to the instructions: "><a href="https://openedu.ru/proctoring-manual-itmoproctor/" data-ru="Открытое образование - Инструкция по прохождению промежуточной и итоговой аттестации с использованием системы ITMOproctor" data-en="Open Education - Instructions for passing interim and final certification using the ITMOproctor system">Открытое образование - Инструкция по прохождению промежуточной и итоговой аттестации с использованием системы ITMOproctor</a></p>
+            <li data-ru="Проверь, состоишь ли ты в правильной группе:" data-en="Check if you are in the correct group:">Проверь, состоишь ли ты в правильной группе:</li>
+            <ul>
+                <li data-ru="Студенты текущего семестра должны быть в группе, например «УрФУ_Весна2024»." data-en="Current semester students should be in the group, for example, 'UrFU_Spring2024'.">Студенты текущего семестра должны быть в группе, например «УрФУ_Весна2024».</li>
+                <li data-ru="Студенты с академической задолженностью должны быть в группе «УрФУ_Задолженность»." data-en="Students with academic debt should be in the 'UrFU_Debt' group.">Студенты с академической задолженностью должны быть в группе «УрФУ_Задолженность».</li>
+            </ul>
+            <li data-ru="Убедись, что сроки сдачи не истекли:" data-en="Make sure the deadlines have not expired:">Убедись, что сроки сдачи не истекли:</li>
+            <p data-ru="Ознакомься с графиком экзаменов и убедись, что ты сдаёшь экзамен в установленные сроки." data-en="Check the exam schedule and make sure you are taking the exam within the set deadlines.">Ознакомься с графиком экзаменов и убедись, что ты сдаёшь экзамен в установленные сроки.</p>
+            <li data-ru="Записывайся на тестирование заранее:" data-en="Register for the test in advance:">Записывайся на тестирование заранее:</li>
+            <p data-ru="Количество мест ограничено. Используй предварительную запись в приложении ITMOproctor. Пропуск назначенного тестирования считается неявкой на итоговое тестирование." data-en="The number of places is limited. Use the pre-registration in the ITMOproctor application. Missing the scheduled test is considered an absence from the final test.">Количество мест ограничено. Используй предварительную запись в приложении ITMOproctor. Пропуск назначенного тестирования считается неявкой на итоговое тестирование.</p>
+            <li data-ru="Проверь местное время в приложении:" data-en="Check the local time in the application:">Проверь местное время в приложении:</li>
+            <p data-ru="Приложение ITMOproctor показывает местное время. Если время на компьютере не совпадает, ориентируйся на время, отображаемое в приложении." data-en="The ITMOproctor application shows local time. If the time on the computer does not match, follow the time displayed in the application.">Приложение ITMOproctor показывает местное время. Если время на компьютере не совпадает, ориентируйся на время, отображаемое в приложении.</p>
+            <li data-ru="Заранее проверь работу веб-камеры и микрофона:" data-en="Check the webcam and microphone in advance:">Заранее проверь работу веб-камеры и микрофона:</li>
+            <p data-ru="Убедись, что камера и микрофон работают. Видео должно быть четким, голос разборчивым. Не используй наушники с микрофоном во время сдачи." data-en="Make sure the camera and microphone work. The video should be clear, and the voice should be understandable. Do not use headphones with a microphone during the test.">Убедись, что камера и микрофон работают. Видео должно быть четким, голос разборчивым. Не используй наушники с микрофоном во время сдачи.</p>
+            <li data-ru="Проверь персональные данные:" data-en="Check personal data:">Проверь персональные данные:</li>
+            <p data-ru="Личные данные в профиле должны совпадать с данными студенческого билета." data-en="Personal data in the profile must match the student card data.">Личные данные в профиле должны совпадать с данными студенческого билета.</p>
+            <li data-ru="Убедись, что в профиле указана корпоративная почта @urfu.me:" data-en="Make sure your profile lists the corporate email @urfu.me:">Убедись, что в профиле указана корпоративная почта @urfu.me:</li>
+            <p data-ru="Если указан другой адрес, например at.urfu.ru, оценка за экзамен выставлена не будет." data-en="If another address is specified, such as at.urfu.ru, the exam grade will not be given.">Если указан другой адрес, например at.urfu.ru, оценка за экзамен выставлена не будет.</p>
+            <li data-ru="Демонстрация рабочего места:" data-en="Workplace demonstration:">Демонстрация рабочего места:</li>
+            <ul>
+                <li data-ru="Покажи поверхность, на которой размещен компьютер." data-en="Show the surface on which the computer is placed.">Покажи поверхность, на которой размещен компьютер.</li>
+                <li data-ru="Через зеркало покажи экран компьютера и пространство вокруг." data-en="Use a mirror to show the computer screen and the space around it.">Через зеркало покажи экран компьютера и пространство вокруг.</li>
+                <li data-ru="Покажи, что второй монитор отключен и выключен." data-en="Show that the second monitor is disconnected and turned off.">Покажи, что второй монитор отключен и выключен.</li>
+                <li data-ru="Убедись в отсутствии посторонних людей." data-en="Ensure there are no strangers.">Убедись в отсутствии посторонних людей.</li>
+            </ul>
+            <li data-ru="Условия успешного освоения курса:" data-en="Conditions for successful course completion:">Условия успешного освоения курса:</li>
+            <ul>
+                <li data-ru="Итоговый уровень достижений по всему курсу превышает пороговое значение, соответствующее оценке «Удовлетворительно»." data-en="The final level of achievements for the entire course exceeds the threshold value corresponding to the grade 'Satisfactory'.">Итоговый уровень достижений по всему курсу превышает пороговое значение, соответствующее оценке «Удовлетворительно».</li>
+                <li data-ru="По каждому типу заданий у тебя должно быть не менее 40% в колонке «Оценка»." data-en="For each type of assignment, you should have at least 40% in the 'Grade' column.">По каждому типу заданий у тебя должно быть не менее 40% в колонке «Оценка».</li>
+                <li data-ru="Статус прокторинга «Принят» — проверить можно в приложении ITMOproctor в карточке экзамена." data-en="The proctoring status 'Accepted' can be checked in the ITMOproctor application on the exam card.">Статус прокторинга «Принят» — проверить можно в приложении ITMOproctor в карточке экзамена.</li>
+            </ul>
+            <li data-ru="Экзамен проходит в асинхронном режиме:" data-en="The exam is conducted asynchronously:">Экзамен проходит в асинхронном режиме:</li>
+            <p data-ru="Проверка тестирования может занять до 5 рабочих дней." data-en="Testing can take up to 5 working days.">Проверка тестирования может занять до 5 рабочих дней.</p>
+            <li data-ru="Отсутствие технической возможности сдачи из дома:" data-en="Lack of technical ability to take the exam from home:">Отсутствие технической возможности сдачи из дома:</li>
+            <p data-ru="В случае отсутствия технической возможности сдачи итогового контроля из дома, тебе необходимо заранее обратиться в дирекцию института с просьбой предоставить рабочее место, удовлетворяющее условиям прокторинга." data-en="If you lack the technical ability to take the final exam from home, you need to contact the institute's administration in advance to request a workplace that meets the proctoring requirements.">В случае отсутствия технической возможности сдачи итогового контроля из дома, тебе необходимо заранее обратиться в дирекцию института с просьбой предоставить рабочее место, удовлетворяющее условиям прокторинга.</p>
+        </ol>
+        <div class="quiz">
+            <h3 data-ru="Викторина" data-en="Quiz">Викторина</h3>
+            <form id="quiz-form">
+                <div class="question">
+                    <p data-ru="Вопрос 1: Какое приложение необходимо установить для сдачи экзаменов?" data-en="Question 1: Which application needs to be installed for taking exams?"></p>
+                    <input type="radio" name="q1" value="1"> ITMOproctor<br>
+                    <input type="radio" name="q1" value="2"> Zoom<br>
+                    <input type="radio" name="q1" value="3"> Microsoft Teams<br>
+                </div>
+                <div class="question">
+                    <p data-ru="Вопрос 2: Какое время следует учитывать при сдаче экзамена?" data-en="Question 2: Which time should be considered during the exam?"></p>
+                    <input type="radio" name="q2" value="1"> Время на компьютере<br>
+                    <input type="radio" name="q2" value="2"> Местное время<br>
+                    <input type="radio" name="q2" value="3"> Время экзаменатора<br>
+                </div>
+                <div class="question">
+                    <p data-ru="Вопрос 3: Какая почта должна быть указана в профиле?" data-en="Question 3: Which email should be listed in the profile?"></p>
+                    <input type="radio" name="q3" value="1"> Личная почта<br>
+                    <input type="radio" name="q3" value="2"> Корпоративная почта @urfu.me<br>
+                    <input type="radio" name="q3" value="3"> Почта на Gmail<br>
+                </div>
+                <button type="button" onclick="checkQuiz()" data-ru="Проверить ответы" data-en="Check Answers">Проверить ответы</button>
+                <p id="quiz-result" data-ru="Результат: " data-en="Result: "></p>
+                <button id="next-button" style="display: none;" data-ru="Далее" data-en="Next">Далее</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Обратная связь" data-en="Feedback">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const languageSelect = document.getElementById('language-select');
+    
+            // Функция для смены языка
+            function switchLanguage() {
+                const selectedLanguage = languageSelect.value;
+                const elements = document.querySelectorAll('[data-ru], [data-en]');
+                elements.forEach(element => {
+                    if (selectedLanguage === 'ru') {
+                        element.textContent = element.getAttribute('data-ru');
+                    } else if (selectedLanguage === 'en') {
+                        element.textContent = element.getAttribute('data-en');
+                    }
+                });
+                // Сохранить выбранный язык в localStorage
+                localStorage.setItem('language', selectedLanguage);
+            }
+            
+            // Событие для селектора языка
+            languageSelect.addEventListener('change', switchLanguage);
+            
+            // Загрузка языка из localStorage
+            const savedLanguage = localStorage.getItem('language') || 'ru';
+            languageSelect.value = savedLanguage;
+            switchLanguage();
+        });
+
+
+        // Function to check quiz answers
+        function checkQuiz() {
+            const answers = [1, 2, 2];  // Correct answer index for each question
+            let score = 0;
+            for (let i = 1; i <= answers.length; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && parseInt(selected.value) === answers[i - 1]) {
+                    score++;
+                }
+            }
+            const lang = document.getElementById('language-select').value;
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = result.getAttribute('data-' + lang) + score + '/' + answers.length;
+            if (score === answers.length) {
+                document.getElementById('next-button').style.display = 'block';
+            }
+        }
+
+        // Set initial language based on localStorage or default to 'ru'
+        const savedLanguage = localStorage.getItem('language') || 'ru';
+        setLanguage(savedLanguage);
+    </script>
+</body>
+</html>

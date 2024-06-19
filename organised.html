@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Организация учебного процесса" data-en="Organization of the Educational Process">Организация учебного процесса</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 data-ru="Организация учебного процесса" data-en="Organization of the Educational Process">Организация учебного процесса</h2>
+        <p data-ru="В этом разделе ты узнаешь, как правильно организовать своё обучение на платформе OpenEdu, чтобы добиться максимального успеха и получить высокие баллы." data-en="In this section, you will learn how to properly organize your studies on the OpenEdu platform to achieve maximum success and get high scores."></p>
+        
+        <h2 data-ru="Темп изучения: как правильно планировать время" data-en="Study Pace: How to Plan Your Time Properly">Темп изучения: как правильно планировать время</h2>
+        <ul>
+            <li data-ru="Один из ключевых моментов успешного обучения – это правильное планирование." data-en="One of the key points of successful learning is proper planning."></li>
+            <li data-ru="Раздели весь курс на небольшие части и установи для себя конкретные сроки выполнения каждого модуля. Постарайся составить расписание занятий и придерживаться его на протяжении всего обучения." data-en="Divide the entire course into small parts and set specific deadlines for each module. Try to create a study schedule and stick to it throughout the course."></li>
+            <li data-ru="Постарайся учиться регулярно. Лучше заниматься по 1-2 часа каждый день, чем пытаться освоить большой объём материала за одну неделю до начала экзаменов." data-en="Try to study regularly. It is better to study for 1-2 hours every day than to try to master a large amount of material a week before the exams."></li> 
+            <li data-ru="Не забывай делать перерывы во время занятий. Они помогут сохранить концентрацию и продуктивность." data-en="Don't forget to take breaks during your studies. They help maintain concentration and productivity."></li>
+        </ul>
+        
+        <h2 data-ru="Структура курса: лекции, задания, тесты" data-en="Course Structure: Lectures, Assignments, Tests">Структура курса: лекции, задания, тесты</h2>
+        <ul>
+            <li data-ru="Видеолекции – это основной источник информации в курсе." data-en="Video lectures are the main source of information in the course."></li>
+            <li data-ru="Практические задания помогут тебе закрепить полученные знания. Выполняй их внимательно и своевременно." data-en="Practical assignments will help you consolidate the acquired knowledge. Do them carefully and on time."></li> 
+            <li data-ru="В конце каждого модуля или видеолекции ты будешь проходить тесты. Они помогут проверить твои знания и подготовиться к итоговому экзамену." data-en="At the end of each module or video lecture, you will take tests. They will help check your knowledge and prepare for the final exam."></li>
+        </ul>
+        <p data-ru="Правильно сформированный учебный процесс — это ключевой фундамент, на котором строится знание!" data-en="Properly structured educational process is the key foundation on which knowledge is built!"></p>
+    </div>
+    
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Обратная связь" data-en="Feedback">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language-select');
+    
+    // Функция для смены языка
+            function switchLanguage() {
+                const selectedLanguage = languageSelect.value;
+                const elements = document.querySelectorAll('[data-ru], [data-en]');
+                elements.forEach(element => {
+                    if (selectedLanguage === 'ru') {
+                        element.textContent = element.getAttribute('data-ru');
+                    } else if (selectedLanguage === 'en') {
+                        element.textContent = element.getAttribute('data-en');
+                    }
+                });
+                // Сохранить выбранный язык в localStorage
+                localStorage.setItem('language', selectedLanguage);
+            }
+            
+            // Событие для селектора языка
+            languageSelect.addEventListener('change', switchLanguage);
+            
+            // Загрузка языка из localStorage
+            const savedLanguage = localStorage.getItem('language') || 'ru';
+            languageSelect.value = savedLanguage;
+            switchLanguage();
+        });
+    </script>
+</body>
+</html>

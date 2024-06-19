@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="main__greeting">
+        <div class="greeting__block">
+            <h1 id="greeting_title" data-ru="Платформа Openedu" data-en="Openedu Platform">Платформа Openedu</h1>
+        </div>
+        <div class="greeting__text__block">
+            <p class="greeting_text" data-ru="OpenEdu – это онлайн-образовательная платформа, предоставляющая доступ к обширному количеству курсов по различным дисциплинам. Курсы разработаны ведущими университетами и преподавателями специально для тебя." data-en="OpenEdu is an online educational platform providing access to a wide range of courses in various disciplines. The courses are developed by leading universities and instructors specifically for you.">OpenEdu – это онлайн-образовательная платформа, предоставляющая доступ к обширному количеству курсов по различным дисциплинам. Курсы разработаны ведущими университетами и преподавателями специально для тебя.</p>
+        </div>
+    </div>
+
+    <div class="main_openedu_page">
+        <div class="select_item">
+            <div class="block" id="guide">
+                <a href="selectGuide.html" data-ru="Перейти к руководству" data-en="Go to Guide">Перейти к руководству</a>
+            </div>
+            <div class="block" id="support">
+                <a href="supportAndAdvice.html" data-ru="Поддержка и консультации" data-en="Support and Advice">Поддержка и консультации</a>
+            </div>
+            <div class="block" id="account">
+                <a href="accaountAndMail.html" data-ru="Создание личного кабинета и корпоративной почты" data-en="Create Account and Corporate Mail">Создание личного кабинета и корпоративной почты</a>
+            </div>
+            <div class="block" id="resources">
+                <a href="additionalResourcesAndMaterials.html" data-ru="Дополнительные ресурсы и материалы" data-en="Additional Resources and Materials">Дополнительные ресурсы и материалы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="image/openedu.png" alt="image description">
+    </div>
+
+    <div class="text-container">
+        <p data-ru="Курсы доступны в любое время и из любой точки мира, ты сам управляешь своим графиком. На платформе представлено множество различных направлений. Ты сможешь выбрать те курсы, которые соответствуют твоим интересам и профессиональным целям. Люди, ответственные за качество предоставляемой информации, тщательно отбирают преподавателей и следят за тем, чтобы учебные материалы были актуальными и полезными." data-en="Courses are available anytime and anywhere in the world, you manage your schedule. The platform offers a wide variety of disciplines. You can choose the courses that match your interests and professional goals. The people responsible for the quality of the provided information carefully select the instructors and ensure that the educational materials are up-to-date and useful.">Курсы доступны в любое время и из любой точки мира, ты сам управляешь своим графиком. На платформе представлено множество различных направлений. Ты сможешь выбрать те курсы, которые соответствуют твоим интересам и профессиональным целям. Люди, ответственные за качество предоставляемой информации, тщательно отбирают преподавателей и следят за тем, чтобы учебные материалы были актуальными и полезными.</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language-select');
+    
+    // Функция для смены языка
+    function switchLanguage() {
+        const selectedLanguage = languageSelect.value;
+        const elements = document.querySelectorAll('[data-ru], [data-en]');
+        elements.forEach(element => {
+            if (selectedLanguage === 'ru') {
+                element.textContent = element.getAttribute('data-ru');
+            } else if (selectedLanguage === 'en') {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+        // Сохранить выбранный язык в localStorage
+        localStorage.setItem('language', selectedLanguage);
+    }
+    
+    // Событие для селектора языка
+    languageSelect.addEventListener('change', switchLanguage);
+    
+    // Загрузка языка из localStorage
+    const savedLanguage = localStorage.getItem('language') || 'ru';
+    languageSelect.value = savedLanguage;
+    switchLanguage();
+});
+    </script>
+
+    <!-- Подвал -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contact">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

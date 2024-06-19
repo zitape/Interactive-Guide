@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ru="Двухуровневое меню" data-en="Two-Level Menu">Двухуровневое меню</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="image/logosecond.png" alt="Логотип"></a>
+        <ul class="menu">
+            <li><a href="index.html" data-ru="Главная" data-en="Home">Главная</a></li>
+            <li>
+                <a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a>
+                <ul>
+                    <li>
+                        <a href="Openedu.html" data-ru="Openedu" data-en="Openedu">Openedu</a>
+                        <ul>
+                            <li><a href="selectGuide.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elearnPage.html" data-ru="Elearn" data-en="Elearn">Elearn</a>
+                        <ul>
+                            <li><a href="elearn.html" data-ru="Руководство" data-en="Guide">Руководство</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+        </ul>
+        <div class="language-switcher">
+            <select id="language-select">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Greeting content of the page -->
+    <div class="main__greeting">
+        <div class="greeting__block">
+            <h1 id="greeting_title" data-ru="Рады видеть вас на интерактивном руководстве по онлайн-курсам" data-en="Welcome to the Interactive Guide for Online Courses">Рады видеть вас на интерактивном руководстве по онлайн-курсам</h1>
+        </div>
+        <div class="greeting__text__block">
+            <p class="greeting_text" data-ru="Здесь вы найдёте множество полезных материалов и инструкций для успешного обучения и развития своих навыков. Мы предлагаем курсы на платформах OpenEdu и Elearn. Присоединяйтесь к нам и откройте для себя мир онлайн-образования!" data-en="Here you will find many useful materials and instructions for successful learning and skill development. We offer courses on the OpenEdu and Elearn platforms. Join us and discover the world of online education!">Здесь вы найдёте множество полезных материалов и инструкций для успешного обучения и развития своих навыков. Мы предлагаем курсы на платформах OpenEdu и Elearn. Присоединяйтесь к нам и откройте для себя мир онлайн-образования!</p>
+        </div>
+    </div>
+
+    <!-- Main content of the page -->
+    <div class="main">
+        <div class="item__platform">
+            <h1 data-ru="Платформа Openedu" data-en="Openedu Platform">Платформа Openedu</h1>
+            <p data-ru="Openedu - это образовательная платформа. Она представляет широкий спектр онлайн-курсов, по различным направлениям, разработанных ведущими экспертами в своих областях." data-en="Openedu is an educational platform offering a wide range of online courses in various fields, developed by leading experts.">Openedu - это образовательная платформа. Она представляет широкий спектр онлайн-курсов, по различным направлениям, разработанных ведущими экспертами в своих областях.</p>
+            <a href="Openedu.html"><button data-ru="Подробнее о платформе" data-en="Learn more about the platform">Подробнее о платформе</button></a>
+        </div>
+        <div class="item__platform">
+            <h1 data-ru="Платформа Elearn" data-en="Elearn Platform">Платформа Elearn</h1>
+            <p data-ru="Elearn - это многоязычный портал электронного обучения. В нем размещены образовательные ресурсы для студентов и сотрудников УрФУ." data-en="Elearn is a multilingual e-learning portal hosting educational resources for students and staff of UrFU.">Elearn - это многоязычный портал электронного обучения. В нем размещены образовательные ресурсы для студентов и сотрудников УрФУ.</p></a>
+            <a href="elearnPage.html"><button data-ru="Подробнее о платформе" data-en="Learn more about the platform">Подробнее о платформе</button>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4 data-ru="Информация" data-en="Information">Информация</h4>
+                <ul>
+                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
+                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
+                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
+                    <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of use">Обратная связь</a></li>
+                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privace policy">Обратная связь</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const languageSelect = document.getElementById('language-select');
+    
+    // Функция для смены языка
+    function switchLanguage() {
+        const selectedLanguage = languageSelect.value;
+        const elements = document.querySelectorAll('[data-ru], [data-en]');
+        elements.forEach(element => {
+            if (selectedLanguage === 'ru') {
+                element.textContent = element.getAttribute('data-ru');
+            } else if (selectedLanguage === 'en') {
+                element.textContent = element.getAttribute('data-en');
+            }
+        });
+        // Сохранить выбранный язык в localStorage
+        localStorage.setItem('language', selectedLanguage);
+    }
+    
+    // Событие для селектора языка
+    languageSelect.addEventListener('change', switchLanguage);
+    
+    // Загрузка языка из localStorage
+    const savedLanguage = localStorage.getItem('language') || 'ru';
+    languageSelect.value = savedLanguage;
+    switchLanguage();
+    });
+    </script>
+</body>
+</html>
