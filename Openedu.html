@@ -29,7 +29,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
+            <li><a href="#aboutUs" data-ru="О нас" data-en="About Us">О нас</a></li>
         </ul>
         <div class="language-switcher">
             <select id="language-select">
@@ -73,53 +73,16 @@
         <p data-ru="Курсы доступны в любое время и из любой точки мира, ты сам управляешь своим графиком. На платформе представлено множество различных направлений. Ты сможешь выбрать те курсы, которые соответствуют твоим интересам и профессиональным целям. Люди, ответственные за качество предоставляемой информации, тщательно отбирают преподавателей и следят за тем, чтобы учебные материалы были актуальными и полезными." data-en="Courses are available anytime and anywhere in the world, you manage your schedule. The platform offers a wide variety of disciplines. You can choose the courses that match your interests and professional goals. The people responsible for the quality of the provided information carefully select the instructors and ensure that the educational materials are up-to-date and useful.">Курсы доступны в любое время и из любой точки мира, ты сам управляешь своим графиком. На платформе представлено множество различных направлений. Ты сможешь выбрать те курсы, которые соответствуют твоим интересам и профессиональным целям. Люди, ответственные за качество предоставляемой информации, тщательно отбирают преподавателей и следят за тем, чтобы учебные материалы были актуальными и полезными.</p>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const languageSelect = document.getElementById('language-select');
-    
-    // Функция для смены языка
-    function switchLanguage() {
-        const selectedLanguage = languageSelect.value;
-        const elements = document.querySelectorAll('[data-ru], [data-en]');
-        elements.forEach(element => {
-            if (selectedLanguage === 'ru') {
-                element.textContent = element.getAttribute('data-ru');
-            } else if (selectedLanguage === 'en') {
-                element.textContent = element.getAttribute('data-en');
-            }
-        });
-        // Сохранить выбранный язык в localStorage
-        localStorage.setItem('language', selectedLanguage);
-    }
-    
-    // Событие для селектора языка
-    languageSelect.addEventListener('change', switchLanguage);
-    
-    // Загрузка языка из localStorage
-    const savedLanguage = localStorage.getItem('language') || 'ru';
-    languageSelect.value = savedLanguage;
-    switchLanguage();
-});
-    </script>
+    <script src="language.js"></script>
 
     <!-- Подвал -->
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
-                <h4 data-ru="Информация" data-en="Information">Информация</h4>
                 <ul>
-                    <li><a href="#" data-ru="Главная" data-en="Home">Главная</a></li>
-                    <li><a href="#" data-ru="О нас" data-en="About Us">О нас</a></li>
-                    <li><a href="#" data-ru="Платформы" data-en="Platforms">Платформы</a></li>
-                    <li><a href="#" data-ru="Контакты" data-en="Contact">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4 data-ru="Полезные ссылки" data-en="Useful Links">Полезные ссылки</h4>
-                <ul>
-                    <li><a href="#" data-ru="Условия пользования" data-en="Terms of Use">Условия пользования</a></li>
-                    <li><a href="#" data-ru="Политика конфиденциальности" data-en="Privacy Policy">Политика конфиденциальности</a></li>
+                    <li><a href="#" data-ru="Перейти на главную страницу" data-en="Go to home page">Главная</a></li>
+                    <p id="aboutUs">Мы команда Ridiculum est состоящая из 4 студентов разрабатывающих интерактивное руководство, чтобы облегчить студентам прохождение курсов</p>
                 </ul>
             </div>
         </div>

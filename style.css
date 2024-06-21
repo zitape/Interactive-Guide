@@ -118,6 +118,17 @@ body, html {
     padding: 0 20px; /* Добавляем отступы по краям */
 }
 
+@media (max-width: 768px) {
+    .greeting__block {
+        margin-top: 50px;
+        text-align: justify;
+    }
+
+    .greeting_title {
+        font-size: 10px;
+    }
+}
+
 #greeting_title {
     width: 700px;
     font-size: 40px;
